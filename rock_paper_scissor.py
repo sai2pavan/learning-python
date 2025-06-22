@@ -1,5 +1,6 @@
 import random
 print("\tWELCOME TO THE ROCK, PAPER AND SCISSORS GAME\n\tITS A 3 ROUND MATCH\n\tWHOEVER WINS MAXIMUM ROUNDS WINS!")
+name = input("\tEnter your name:")
 replay = "yes"
 
 while replay == "yes":
@@ -40,10 +41,10 @@ while replay == "yes":
 
     print("\tCOMPUTER",comp,"-",user,"USER")
     if comp > user:
-        print("\tYOU HAVE LOST, BETTER LUCK NEXT TIME")
+        print("\tYOU HAVE LOST",name, "BETTER LUCK NEXT TIME")
     elif user > comp:
-        print("\tYOU HAVE WON, WELLPLAYED")
+        print("\tYOU HAVE WON",name,"WELLPLAYED")
     else:
-        print("\tITS A DRAW, BETTER LUCK NEXT TIME")
+        print("\tITS A DRAW",name,"BETTER LUCK NEXT TIME")
     replay = input("would you like to play again? (yes/no)").lower().strip()
     
