@@ -1,33 +1,33 @@
 import random
 
 replay = "yes"
-print("🎮 WELCOME TO THE NUMBER GUESSING GAME 🧠\n"
-      "Guess a number between 1 to 100\n"
-      "After each Guess you will be given hint on how far you are from the number\n"
-      "Good Luck!")
+print("\tWELCOME TO THE NUMBER GUESSING GAME\n"
+      "\tGuess a number between 1 to 100\n"
+      "\tAfter each Guess you will be given hint on how far you are from the number\n"
+      "\tGood Luck!")
+print()
 
 while replay == "yes":
-    print("I'm thinking of a number!(between 1 to 100) Try to guess the number:")
     initial = random.randint(1,100)
     guess = -1
     
     
 
     while guess != initial:
-        guess = int(input())
+        guess = int(input("\tI'm thinking of a number!(between 1 to 100) Try to guess the number:"))
         difference = guess - initial
         if difference > 10:
-            print("Higher!")
+            print("\tHigher!")
         elif difference < -10:
-            print("Lower!")
+            print("\tLower!")
         elif 10 >= difference >= 5:
-            print("High!")
+            print("\tHigh!")
         elif -10 <= difference <= -5:
-            print("Low!")
+            print("\tLow!")
         elif 5 > difference > 0:
-            print("Near! But High")
+            print("\tNear! But High")
         elif -5 < difference < 0:
-            print("Near! But Low")
+            print("\tNear! But Low")
         else:
-            print("Thats it!", initial, "is the guess")
-    replay = input("would you like to play again (yes/no)").lower().strip()
+            print("\tThats it!", initial, "is the number")
+    replay = input("\twould you like to play again (yes/no)").lower().strip()
