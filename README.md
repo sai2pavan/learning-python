@@ -8,7 +8,7 @@ I’m using this space to document the problems I solve across different platfor
 
 ## 📂 Repository Structure
 
-learning-python/
+learning-python
 │
 ├── CS50P/ # Harvard CS50's Introduction to Programming with Python
 ├── Hackerrank/ # Hackerrank problem solutions
